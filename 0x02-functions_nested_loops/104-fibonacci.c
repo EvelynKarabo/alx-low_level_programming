@@ -2,7 +2,7 @@
 
 /**
  * main - Prints the first 98 fibonacci numbers, starting with
- * 1 and 2, separeted by a comma followed by a space.
+ * 1 and 2, separated by a comma followed by a space.
  * Return: Always 0.
  */
 
@@ -29,19 +29,19 @@ int main(void)
 	{
 	half1 = fib1_half1 + fib2_half1;
 	half2 = fib1_half2 + fib2_half2;
-	if (fib1_half2 + fib2_half2 >9999999999)
+	if (fib1_half2 + fib2_half2 > 9999999999)
 	{
 	half1 += 1;
 	half2 %= 10000000000;
 	}
 	printf("%lu%lu", half1, half2);
 	if (count != 98)
-	print(",");
+	printf(",");
 	fib1_half1 = fib2_half1;
 	fib1_half2 = fib2_half2;
 	fib2_half1 = half1;
 	fib2_half2 = half2;
 	}
 	printf("\n");
-return (0);
+	return (0);
 }
