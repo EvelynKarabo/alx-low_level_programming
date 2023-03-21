@@ -7,9 +7,7 @@
  */  
 
 int main(void)
-
 {
-
 	int i = 0;
 	long j = i, k = 2, sum = k;
 
@@ -22,5 +20,5 @@ int main(void)
 	++i;
 	}
 	printf("%ld\n", sum);
-	return (0);
+return (0);
 }
